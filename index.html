@@ -2,100 +2,93 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>shp</title>
+    <title>Галерея</title>
     <style>
-    body{
-        margin:0;
-        padding:0;
-        background-color:hsla(201, 100%, 54%, 0.3);
+        body {
+            text-align: center;
+            background-color: #c4c4c4;;
+        }
+        .img {
+            display: inline-block;
+            height: 400px;
+            width: 542px;
+            background-color: red;
+            margin: 20px 20px;
+            vertical-align: top;
         }
         
-        .main-nav{
-            position:fixed;
-            text-align:center;
-            left:-200px;
-            top:0;
-            transition:.6s;
-            transition-timing-function: linear;
+        div {
+            transition: all 1s linear;
         }
         
-        @media (min-width: 768px){
-            .main-nav{
-                position:relative;
-                left:0;
-            }
+        .a {
+            background:url(https://paris-life.info/wp-content/uploads/2016/11/eifeel-tower-paris-1068x712.jpg) center;
+            transition: .5s;
         }
         
-        .list{
-            margin:0;
-            padding:0;
-            background:#ffffff;
-            height:100vh;
+                .b {
+            background:url(https://www.sunhome.ru/i/wallpapers/117/oboi-smeshnie-koti.orig.jpg) center;
         }
         
-        @media (min-width: 768px){
-        .list{
-                height:auto}}
-        .main-nav__item{
-            display:block;}
-        
-        @media (min-width: 768px){
-            .main-nav__item{
-                display:inline-block;
-            }
+                .c {
+           background:url(https://img1.goodfon.ru/original/1024x768/6/30/sakura-rozovoe-krasivo.jpg) center;
         }
         
-        .nav_but{
-            color:black;
-            font-weight: 800;
-            font-size: 20px;
-            text-decoration:none;
-            display:block;
-            box-sizing:border-box;
-            width:200px;
-            padding:20px;
-            transition:.6s;
-            text-align:center;
+                .d {
+         background:url(https://avochka.ru/img/kartinka/1/foto_s_krasivym_leopardom.jpg) center;
         }
         
-        @media (min-width: 768px){
-            .nav_but{
-                text-align:center;
-            }
+                .f {
+            background:url(https://www.1zoom.ru/big2/28/206521-fontella.jpg) center;
         }
         
-        .nav_but:hover{
-            background:hsla(201, 100%, 54%, 0.3);
-            transition-timing-function: ease-out;
-            transition-duration: .2s;
+                .g {
+           background:url(https://avatarko.ru/img/kartinka/33/yagoda_klubnika_33110.jpg) center;
         }
         
-        .main-nav__open-button{
-            position:absolute;
-            right:-48px;
-            top:0;
-            z-index:30;
+                .h {
+            background:url(http://www.2fons.ru/pic/201407/1024x768/2fons.ru-34237.jpg) center;
         }
         
-        .main-nav_is-open{
-            left:0;
+                .i {
+           background:url(https://www.motto.net.ua/pic/201209/1024x600/motto.net.ua-30332.jpg) center;
         }
+        
+                .e {
+            background:url(https://cdn.fishki.net/upload/post/201508/11/1626045/tn/2ebee09abb6a77c69ac853d58e3067a0.jpg) center;
+        }
+        
+        #e:hover, #g:hover, #i:hover {
+            transform: scale(1.1,1.1) rotate(360deg);
+        }
+        
+                #b:hover {
+            transform: translateY(100px) scale(1.4);
+        }
+        
+                        #h:hover {
+            transform: translateY(-100px) scale(1.4);
+        }
+        
+                                #d:hover {
+            transform: translateX(200px) scale(1.4) rotate(360deg);
+        }
+        
+                                #f:hover {
+            transform: translateX(-200px) scale(1.4) rotate(360deg);
+        }
+        
     </style>
 </head>
 <body>
-    <nav id="navv" class="main-nav">
-        <ol class="list">
-            <li class="main-nav__item"><a class="nav_but" href="#">Главная</a></li>
-            <li class="main-nav__item"><a class="nav_but" href="#">Все товары</a></li><li class="main-nav__item"><a class="nav_but" href="#">Контакты</a></li>
-        </ol>
-        <img class="main-nav__open-button" id="nav_open" src="http://www.picshare.ru/uploads/180411/5lzzTlV03c.jpg" border="0" width="50" height="50" title="menu">
-    </nav>
-
-    <script>
-        nav_open.addEventListener("click", function(){
-            navv.classList.toggle("main-nav_is-open");
-        });
-    </script>
+    <div class="img a" id="a"></div>
+    <div class="img b" id="b"></div>
+    <div class="img c"  id="c"></div>
+     <div class="img d" id="d"></div>
+     <div class="img e" id="e"></div>
+     <div class="img f"  id="f"></div>
+    <div class="img g" id="g"></div>
+    <div class="img h"  id="h"></div>
+    <div class="img i" id="i"></div>
 </body>
 </html>
