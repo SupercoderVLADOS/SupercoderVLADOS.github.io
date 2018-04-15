@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>shp</title>
+    <style>
+    body{
+        margin:0;
+        padding:0;
+        background-color:hsla(201, 100%, 54%, 0.3);
+        }
+        
+        .main-nav{
+            position:fixed;
+            text-align:center;
+            left:-200px;
+            top:0;
+            transition:.6s;
+            transition-timing-function: linear;
+        }
+        
+        @media (min-width: 768px){
+            .main-nav{
+                position:relative;
+                left:0;
+            }
+        }
+        
+        .list{
+            margin:0;
+            padding:0;
+            background:#ffffff;
+            height:100vh;
+        }
+        
+        @media (min-width: 768px){
+        .list{
+                height:auto}}
+        .main-nav__item{
+            display:block;}
+        
+        @media (min-width: 768px){
+            .main-nav__item{
+                display:inline-block;
+            }
+        }
+        
+        .nav_but{
+            color:black;
+            font-weight: 800;
+            font-size: 20px;
+            text-decoration:none;
+            display:block;
+            box-sizing:border-box;
+            width:200px;
+            padding:20px;
+            transition:.6s;
+            text-align:center;
+        }
+        
+        @media (min-width: 768px){
+            .nav_but{
+                text-align:center;
+            }
+        }
+        
+        .nav_but:hover{
+            background:hsla(201, 100%, 54%, 0.3);
+            transition-timing-function: ease-out;
+            transition-duration: .2s;
+        }
+        
+        .main-nav__open-button{
+            position:absolute;
+            right:-48px;
+            top:0;
+            z-index:30;
+        }
+        
+        .main-nav_is-open{
+            left:0;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navv" class="main-nav">
+        <ol class="list">
+            <li class="main-nav__item"><a class="nav_but" href="#">Главная</a></li>
+            <li class="main-nav__item"><a class="nav_but" href="#">Все товары</a></li><li class="main-nav__item"><a class="nav_but" href="#">Контакты</a></li>
+        </ol>
+        <img class="main-nav__open-button" id="nav_open" src="http://www.picshare.ru/uploads/180411/5lzzTlV03c.jpg" border="0" width="50" height="50" title="menu">
+    </nav>
+
+    <script>
+        nav_open.addEventListener("click", function(){
+            navv.classList.toggle("main-nav_is-open");
+        });
+    </script>
+</body>
+</html>
